@@ -1,0 +1,74 @@
+#imgLogo{
+	float: left;
+	width: 100px;
+}
+#imgBandeira{
+	float: right;
+	width: 50px;
+	margin-top: 55px;
+}
+
+nav{
+  background-color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #999;
+  padding: 50px;
+}
+nav ul li:hover{
+  color: #333;
+}
+
+form{
+  margin: 50px;
+  text-align: center;
+}
+form input{
+  margin: 6px;
+
+}
+textarea{
+  height: 76px;
+  resize: none;
+}
+
+footer{
+  border-top: 5px solid #cecece;
+  background-color: #999;
+  text-align: center;
+  clear: both;
+  margin-top: 10px;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 50px;
+}

@@ -1,0 +1,126 @@
+#imgLogo{
+	float: left;
+	width: 100px;
+}
+#imgBandeira{
+	float: right;
+	width: 50px;
+	margin-top: 55px;
+}
+#imgArticle1{
+	width: 100%;
+	height: 120px;
+}
+
+h1{
+  font-size: 50px;
+  margin: 0;
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+}	
+
+nav{
+  background-color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #999;
+  padding: 50px;
+}
+nav ul li:hover{
+  color: #333;
+}
+article{
+  float: left;
+  width: 70%;
+  margin-right: 3%;
+  margin-bottom: 10px;
+}
+
+aside{
+  float: right;
+  width: 27%;
+}
+
+aside ul{
+  background-color: #999;
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+aside ul li{
+  margin: 20px;
+}
+
+aside ul li:before{
+  content: " - ";
+  margin-right: 10px;
+}
+
+section{
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+}
+
+section figure{
+  margin: 0;
+}
+
+section figure img{
+	width: 100%;
+	height: 100%;
+}
+
+section a{
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+
+
+
+
+
+footer{
+  border-top: 5px solid #cecece;
+  background-color: #999;
+  text-align: center;
+  clear: both;
+  margin-top: 10px;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 50px;
+}
