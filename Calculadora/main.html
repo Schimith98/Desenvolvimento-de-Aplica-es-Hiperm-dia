@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+    <body>
+        <center>
+        <table>
+          <tbody><tr>
+            <td colspan="4" align="right" style="border: 1px solid black; padding: 5px;">
+              <span id="calc-output">0</span>
+            </td>
+          </tr>
+      
+          <tr>
+            <td>
+              <input type="button" value="1" id="button-1" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="2" id="button-2" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="3" id="button-3" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="C" id="button-C" onclick="limpar()">
+            </td>
+          </tr>
+      
+          <tr>
+            <td>
+              <input type="button" value="4" id="button-4" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="5" id="button-5" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="6" id="button-6" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="+" id="button-+" onclick="criarEquacao(value)">
+            </td>
+          </tr>
+      
+          <tr>
+            <td>
+              <input type="button" value="7" id="button-7" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="8" id="button-8" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="9" id="button-9" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="-" id="button--" onclick="criarEquacao(value)">
+            </td> 
+          </tr>
+      
+          <tr>
+            <td>
+              <input type="button" value="*" id="button-*" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="0" id="button-0" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="/" id="button-/" onclick="criarEquacao(value)">
+            </td>
+            <td>
+              <input type="button" value="=" id="button-=" onclick="calcular()">
+            </td> 
+          </tr>       
+          
+        </tbody></table>
+        </center>
+       
+      </body>
+</html>
