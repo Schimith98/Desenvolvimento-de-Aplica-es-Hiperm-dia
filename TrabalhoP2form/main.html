@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Preencha o formulário abaixo</h1>
+    </header>
+    <form>
+        <Fieldset>
+            <legend>Dados Pessoais</legend>
+                <div>
+                    <label>Nome:</label>
+                    <input type="text" name="primeiroNome" value="" placeholder="Seu primeiro nome" required pattern="[A-Za-z]*">
+                    <br><br>
+                    <label>Sobrenome:</label>
+                    <input type="text" name="sobrenome" value="" placeholder="Seu último nome" required pattern="[A-Za-z]*">
+                    <br><br>
+                    <label>Sexo:</label>
+                        <div>
+                            <input type="radio" name="sexo" id="sexo"  value="Masculino" required>Masculino<br>
+                            <input type="radio" name="sexo" value="Feminino" required>Feminino   
+                        </div>       
+                    <br>
+                    <label>Nascimento:</label>
+                    <input type="date" name="dtNascimento" required>
+                    <br><br>
+                    <label>RG:</label>
+                    <input type="text" name="RG" value="" placeholder="*apenas numeros" required pattern="\d*"> 
+                    <br><br>
+                    <label>CPF:</label>
+                    <input type="text" name="CPF" value="" placeholder="apenas numeros" required pattern="\d{11}">
+                </div>
+        </Fieldset>
+        <fieldset>
+            <legend> Dados de Endereço </legend>
+            <div>
+                    <label>Rua:</label> 
+                    <input type="text" name="rua" value="" placeholder="nome da rua" required>
+                <br><br>
+                <label>Numero:</label>
+                <input type="text" name="numero" value="" placeholder="000" required>
+                <br><br>
+                <label>Bairro:</label>
+                <input type="text" name="bairro" value="" placeholder="nome do bairro" required pattern="[A-Za-z]*">
+                <br><br>
+                <label>Estado:</label>
+                <select name="estadosBrasil">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <br><br>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" value="" placeholder="nome da cidade" required pattern="[A-Za-z]*">
+                <br><br>
+                <label>CEP:</label>
+                <input type="text" name="CEP" placeholder="apenas numeros"  required pattern="\d{8}"/>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados de Login</legend>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" name="email1" id="email1" placeholder="fulano@email.com" value="" required>
+                    <br><br>
+                    <label>Confirmar email:</label>
+                    <input type="email" name="email2" value="" placeholder="fulano@email.com" id="email2" onchange="verificarEmail()" required>
+                    <br><br>
+                    <label>Login de Usuário:</label>
+                    <input type="text" name="loginUser" placeholder="nome de usuario" value="" required> 
+                    <br><br>
+                    <label>Senha:</label>
+                    <input type="password" name="senha" id="senha1" placeholder="*******" value="" required>
+                    <br><br>
+                    <label>Confirmar senha:</label>
+                    <input type="password" name="senha" id="senha2" placeholder="*******" onchange="verificarSenha()" value="" required>
+                </div>
+        </fieldset>
+       
+        <fieldset>
+              <legend>Pesquisa</legend>
+              <div>
+                    <label>Você deseja trabalhar como Webmaster?</label>
+                        <div>
+                            <input type="radio" name="resp1" value="Sim" required>SIM <br>
+                            <input type="radio" name="resp1" value="Não" required>Nao <br>
+                            <input type="radio" name="resp1" value="Talvez" required>Talvez <br>
+                            <input type="radio" name="resp1" value="Quem sabe" required>Quem sabe 
+                        </div>
+                        <br>
+                        <label>O que você deseja aprender?</label>
+                        <div>
+                            <input type="checkbox" name="resp2" value="HTML">HTML <br>
+                            <input type="checkbox" name="resp2" value="CSS">CSS <br>
+                            <input type="checkbox" name="resp2" value="JavaScript">JavaScript <br>
+                            <input type="checkbox" name="resp2" value="Django">Django <br>
+                        </div>
+            <br>
+            <label>Deixe seu comentário:</label>
+            <input type="text" id="coment" name="comentario" placeholder="comenta ai ;)" value="" required>
+            </div>
+        </fieldset>
+        <br>
+        <input type="submit" name="enviar" id="btEnviar" onclick="verificarCheckBox(), verificarEmail(), verificarSenha()" value="Enviar">
+        <input type="reset" name="limpar" value="limpar">
+    </form>
+</body>
+</html>
