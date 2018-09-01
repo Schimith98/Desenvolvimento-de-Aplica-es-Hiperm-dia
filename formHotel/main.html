@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <form>
+            <label>Nome:</label>
+            <input type="text" name="Nome" value="" placeholder="Seu Nome" required>
+            <br>
+            <label>Email:</label>
+            <input type="email" name="email1" id="email1" placeholder="nome@email.com" value="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <br>
+            <label>Confirmar Email:</label>
+            <input type="email" name="email2" id="email2" placeholder="nome@email.com" value="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <br>
+            <label>Data Chegada:</label>
+            <input type="date" name="dataChegada" id="dataChegada" value="">
+            <br>
+            <label>Data Saída:</label>
+            <input type="date" name="dataChegada" id="dataSaida" value="">
+            <br>
+            <label>Quantidade de Quartos:</label>
+            <input type="number" name="Quartos" id="quantidadeQuartos" value="">
+            <br>
+            <label>Número de Hóspedes:</label>
+            <input type="number" name="Hospedes" id="quantidadeHospedes" min="1" max="4" value="">
+            <br>
+            <input type="submit" name="enviar" id="btEnviar" onclick="calcular(), verificarEmail()" value="enviar"> 
+        </form> 
+</body>
+</html>
+
